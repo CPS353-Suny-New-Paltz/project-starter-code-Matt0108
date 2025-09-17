@@ -10,14 +10,7 @@
 
   <property name="severity" value="warning"/>
 
-  <property name="fileExtensions" value="java, properties, xml"/>
- <!-- https://checkstyle.org/filters/suppressionfilter.html -->
-  <module name="SuppressionFilter">
-    <property name="file" value="${org.checkstyle.google.suppressionfilter.config}"
-           default="checkstyle-suppressions.xml" />
-    <property name="optional" value="true"/>
-  </module>
-          
+  <property name="fileExtensions" value="java, properties, xml"/ 
   <!-- Excludes all 'module-info.java' files              -->
   <!-- See https://checkstyle.org/filefilters/index.html -->
   <module name="BeforeExecutionExclusionFileFilter">
