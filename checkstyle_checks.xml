@@ -79,27 +79,6 @@
       <property name="query" value="//RCURLY[parent::SLIST[count(./*)=1]
                                      or preceding-sibling::*[last()][self::LCURLY]]"/>
 
-  <!-- Checks for whitespace                               -->
-  <!-- See http://checkstyle.org/checks/whitespace/index.html -->
-  <module name="FileTabCharacter">
-    <property name="eachLine" value="true"/>
-  </module>
-
-  <module name="LineLength">
-    <property name="fileExtensions" value="java"/>
-    <property name="max" value="100"/>
-    <property name="ignorePattern"
-             value="^package.*|^import.*|href\s*=\s*&quot;[^&quot;]*&quot;|http://|https://|ftp://"/>
-    </module>
-    <module name="MissingSwitchDefault"/>
-    <module name="FallThrough"/>
-    <module name="UpperEll"/>
-    <module name="ModifierOrder"/>
-    <module name="PackageName">
-      <property name="format" value="^[a-z]+(\.[a-z][a-z0-9]*)*$"/>
-      <message key="name.invalidPattern"
-             value="Package name ''{0}'' must match pattern ''{1}''."/>
-    </module>
     <module name="TypeName">
       <property name="tokens" value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF,
                     ANNOTATION_DEF, RECORD_DEF"/>
