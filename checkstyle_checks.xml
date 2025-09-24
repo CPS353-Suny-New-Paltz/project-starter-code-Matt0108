@@ -23,16 +23,6 @@
     <property name="optional" value="true"/>
   </module> 
 
-<module name="LineLength">
-  <property name="max" value="110"/>
-  <!-- ignore imports/URLs/package lines -->
-  <property name="ignorePattern" value="^package|^import|https?://"/>
-</module>
-
-
-<module name="FileTabCharacter">
-  <property name="eachLine" value="true"/>
-</module>
   <module name="TreeWalker">
     <module name="OuterTypeFilename"/>
     <module name="IllegalTokenText">
